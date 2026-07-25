@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Virtual environment
+.venv/
+
+# Tests and quality tools
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# logs
+*.log
+
+# my local data
+data/raw/
+data/processed/
+data/downloads/
+artifacts/
+
+# IDE files
+.vscode/settings.json
+
+# OS
+.DS_Store
+Thumbs.db
