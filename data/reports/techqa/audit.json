@@ -1,0 +1,150 @@
+{
+  "corpus_file": "data/raw/techqa/training_dev_technotes.json",
+  "question_files": [
+    "data/raw/techqa/training_Q_A.json",
+    "data/raw/techqa/dev_Q_A.json"
+  ],
+  "corpus": {
+    "document_count": 28482,
+    "valid_document_objects": 28482,
+    "invalid_document_objects": 0,
+    "missing_or_empty_titles": 0,
+    "missing_text": 0,
+    "empty_text": 0,
+    "embedded_id_mismatches": 0,
+    "field_frequency": {
+      "id": 28482,
+      "content": 28482,
+      "title": 28482,
+      "text": 28482,
+      "metadata": 28482
+    },
+    "text_length_characters": {
+      "count": 28482,
+      "min": 129,
+      "mean": 3553.93,
+      "p50": 3059,
+      "p90": 6577,
+      "p95": 7799,
+      "max": 178280
+    }
+  },
+  "question_splits": [
+    {
+      "source": "training_Q_A.json",
+      "question_count": 600,
+      "valid_question_objects": 600,
+      "invalid_question_objects": 0,
+      "missing_question_ids": 0,
+      "duplicate_question_ids": 0,
+      "answerable_values": {
+        "Y": 450,
+        "N": 150
+      },
+      "field_frequency": {
+        "QUESTION_ID": 600,
+        "QUESTION_TITLE": 600,
+        "QUESTION_TEXT": 600,
+        "DOCUMENT": 600,
+        "ANSWER": 600,
+        "START_OFFSET": 600,
+        "END_OFFSET": 600,
+        "ANSWERABLE": 600,
+        "DOC_IDS": 600
+      },
+      "question_title_length_characters": {
+        "count": 600,
+        "min": 11,
+        "mean": 80.43,
+        "p50": 77,
+        "p90": 126,
+        "p95": 141,
+        "max": 215
+      },
+      "question_text_length_characters": {
+        "count": 600,
+        "min": 32,
+        "mean": 270.88,
+        "p50": 198,
+        "p90": 571,
+        "p95": 770,
+        "max": 1675
+      },
+      "candidate_document_count": {
+        "count": 600,
+        "min": 50,
+        "mean": 50.0,
+        "p50": 50,
+        "p90": 50,
+        "p95": 50,
+        "max": 50
+      },
+      "missing_candidate_document_count": 0,
+      "missing_candidate_document_examples": [],
+      "missing_answer_document_count": 0,
+      "missing_answer_document_examples": [],
+      "answer_document_not_in_candidates": 0,
+      "valid_answer_spans": 450,
+      "invalid_offsets": 0,
+      "empty_answer_spans": 0
+    },
+    {
+      "source": "dev_Q_A.json",
+      "question_count": 310,
+      "valid_question_objects": 310,
+      "invalid_question_objects": 0,
+      "missing_question_ids": 0,
+      "duplicate_question_ids": 0,
+      "answerable_values": {
+        "Y": 160,
+        "N": 150
+      },
+      "field_frequency": {
+        "QUESTION_ID": 310,
+        "QUESTION_TITLE": 310,
+        "QUESTION_TEXT": 310,
+        "DOCUMENT": 310,
+        "ANSWER": 310,
+        "START_OFFSET": 310,
+        "END_OFFSET": 310,
+        "ANSWERABLE": 310,
+        "DOC_IDS": 310
+      },
+      "question_title_length_characters": {
+        "count": 310,
+        "min": 11,
+        "mean": 77.37,
+        "p50": 75,
+        "p90": 124,
+        "p95": 140,
+        "max": 183
+      },
+      "question_text_length_characters": {
+        "count": 310,
+        "min": 0,
+        "mean": 286.77,
+        "p50": 197,
+        "p90": 566,
+        "p95": 773,
+        "max": 1685
+      },
+      "candidate_document_count": {
+        "count": 310,
+        "min": 49,
+        "mean": 50.0,
+        "p50": 50,
+        "p90": 50,
+        "p95": 50,
+        "max": 50
+      },
+      "missing_candidate_document_count": 0,
+      "missing_candidate_document_examples": [],
+      "missing_answer_document_count": 0,
+      "missing_answer_document_examples": [],
+      "answer_document_not_in_candidates": 0,
+      "valid_answer_spans": 160,
+      "invalid_offsets": 0,
+      "empty_answer_spans": 0
+    }
+  ]
+}
