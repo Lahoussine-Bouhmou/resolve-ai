@@ -50,3 +50,20 @@ The generated runtime query files deliberately exclude:
 
 Ground-truth annotations are stored separately and must only be used by
 evaluation code.
+
+## Build offset-preserving chunks
+
+```bash
+uv run python scripts/build_techqa_chunks.py
+```
+
+The generated chunks contain:
+
+- raw document content;
+- original start and end character offsets;
+- a separate normalized search representation;
+- deterministic chunk identifiers.
+
+Ground-truth answer offsets are used only to evaluate whether answer spans are
+fully contained in at least one chunk. They are never used to construct chunk
+boundaries.
